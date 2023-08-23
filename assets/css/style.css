@@ -1,0 +1,3059 @@
+/* #004D87
+#FF6B35 */
+
+/*font-family: 'Roboto', sans-serif;*/
+
+/*=================================== Shah Jalal ================================
+==================================== Common CSS ===========================
+=================================== 20/05/2022 ================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,900&display=swap');
+
+* {
+    text-decoration: none !important;
+    list-style: none;
+    color: #2e3333;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+}
+
+/*=================================== Shah Jalal ================================
+============================= Header Section Design ===========================
+=================================== 20/05/2022 ================================*/
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.sidenav {
+    right: 0;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+}
+
+.sidebar-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.sidebar-top .closebtn {
+    font-size: 30px;
+    color: #FF6B35;
+}
+
+.sidebar-top h2 {
+    color: #FF6B35;
+    margin-bottom: 0;
+}
+
+.sidebar-top {
+    border-bottom: 1px solid #eee;
+}
+
+.sign-up {
+    display: block;
+    padding: 12px 0;
+    text-align: center;
+    border-radius: 3px;
+    background: #FF6B35;
+    color: #fff;
+    margin-top: 20px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+
+.sign-up:hover {
+    color: #fff;
+}
+
+ul.sidebar-links {
+    padding: 0;
+    margin: 0;
+    margin-top: 30px;
+}
+
+ul.sidebar-links li {
+    padding: 0 10px;
+    margin-bottom: 10px;
+}
+
+ul.sidebar-links li a {
+    font-family: plex-sans, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #2e3333;
+}
+
+ul.sidebar-links li a i {
+    margin-right: 20px;
+    color: #abadad;
+}
+
+.select-hidden {
+    display: none;
+    visibility: hidden;
+    padding-right: 10px;
+}
+
+.select {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    font-size: 16px;
+    color: #fff;
+    width: 100%;
+    height: 40px;
+    border-radius: 3px;
+}
+
+.select-styled {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #FF6B35;
+    padding: 8px 15px;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+
+.select-styled:after {
+    content: "";
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-color: #fff transparent transparent transparent;
+    position: absolute;
+    top: 16px;
+    right: 10px;
+}
+
+.select-styled:hover {
+    background-color: #FF6B35;
+}
+
+.select-styled:active,
+.select-styled.active {
+    background-color: #FF6B35;
+}
+
+.select-styled:active:after,
+.select-styled.active:after {
+    top: 9px;
+    border-color: transparent transparent #fff transparent;
+}
+
+.select-options {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    z-index: 999;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: #FF6B35;
+}
+
+.select-options li {
+    margin: 0;
+    padding: 12px 0;
+    text-indent: 15px;
+    border-top: 1px solid #FF6B35;
+    -moz-transition: all 0.15s ease-in;
+    -o-transition: all 0.15s ease-in;
+    -webkit-transition: all 0.15s ease-in;
+    transition: all 0.15s ease-in;
+}
+
+.select-options li:hover,
+.select-options li.is-selected {
+    color: #c0392b;
+    background: #fff;
+}
+
+.select-options li[rel="hide"] {
+    display: none;
+}
+
+.select-sidebar-fields {
+    position: absolute;
+    bottom: 30px;
+    left: 15px;
+    width: 90%;
+}
+
+header {
+    height: 80px;
+    background: #000;
+}
+
+.header-parent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.header-parent .logo img {
+    width: 150px;    
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.header-right .dropdown {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 5px;
+    border: 1px solid rgba(0,0,0,.08);
+}
+
+.header-right .btn-secondary:active:focus {
+    box-shadow: none !important;
+}
+
+.header-right .dropdown ul li a,
+.header-right .dropdown button {
+    color: #2e3333 !important;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;        
+}
+
+.header-right .btn-secondary {
+    color: #fff;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.header-right a,
+.header-right .header-bars {
+    height: 50px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+    padding: 0 20px;
+    cursor: pointer;
+    margin-left: 15px;
+    border-radius: 5px;
+    color: #2e3333;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    border: 1px solid rgba(0,0,0,.08);
+}
+
+.header-right a i,
+.header-right .header-bars i {
+    margin-right: 15px;
+    color: #FF6B35;
+}
+
+.single-page-header {
+    background: #FF6B35;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.closebtn i {
+    font-size: 25px;
+    color: #FF6B35;
+}
+
+.select-sidebar-fields * {
+    color: #fff !important;
+}
+
+@media screen and (max-width: 576px) {
+    .header-right a {
+        display: none;
+    }
+}
+
+/*=================================== Shah Jalal ================================
+================================ Hero Section Design ===========================
+=================================== 20/05/2022 ================================*/
+
+.hero {
+    height: 540px;
+    width: 100%;
+    background: #000;
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 40px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: #fff;
+}
+
+.hero h1:first-child {
+    padding-top: 100px;
+}
+
+.hero h1 span {
+    color: #FF6B35;
+    font-size: 40px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+}
+
+.hero p {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.hero h1,
+.hero p,
+.hero .container {
+    position: relative;
+    z-index: 10;
+}
+
+.hero p:first-child {
+    margin-top: 40px;
+}
+
+.hero-serach-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 600px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 70px;
+    border-radius: 40px;
+    background: #fff;
+    position: relative;
+}
+
+.hero-serach-box input {
+    background: transparent;
+    outline: none;
+    border: none;
+    flex-basis: 90%;
+    margin-left: 50px;
+}
+
+.hero-serach-box button {
+    height: 60px;
+    margin-right: 5px;
+    width: max-content;
+    border-radius: 35px;
+    background: #FF6B35;
+    padding: 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.hero-serach-box i.fa-rocket {
+    position: absolute;
+    color: #FF6B35;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+}
+
+.hero-bottom-link a {
+    color: #004D87;
+}
+
+.hero-parent-position {
+    position: relative;
+}
+
+.hero-img-position-child-1 {
+    width: 40%;
+    height: 80%;
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.hero-img-position-child-2 {
+    width: 40%;
+    height: 80%;
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.hero-img-position-child-2 img,
+.hero-img-position-child-1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*=================================== Shah Jalal ================================
+======================== Hero Section Responsive Design ===========================
+=================================== 20/05/2022 ================================*/
+
+@media screen and (max-width: 992px) {
+    .hero-img-position-child-1 {
+        display: none;
+    }
+    
+    .hero h1,
+    .hero p {
+        text-align: left;
+    }
+    
+    .hero h1 span,
+    .hero h1 {
+        font-size: 30px;
+    }
+    
+    .hero-img-position-child-2 {
+        top: 0;
+        transform: unset;
+        width: 70%;
+        right: 0;
+    }
+    
+    .hero-serach-box {
+        width: 400px;
+        height: 60px;
+        margin-left: unset;
+    }
+    
+    .hero-serach-box button {
+        height: 50px;
+    }
+} 
+
+@media screen and (max-width: 576px) {
+    .hero-serach-box input {
+        flex-basis: unset;
+        width: 150px;
+    }
+    
+    .hero-img-position-child-2 {
+        width: 100%;
+    }
+    
+    .hero-serach-box {
+        height: 50px;
+    }
+    
+    .hero-serach-box button {
+        height: 40px;
+        padding: 0 15px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .hero-serach-box input {
+        flex-basis: unset;
+        width: 150px;
+    }
+}
+
+/*=================================== Shah Jalal ================================
+================================ Map Section Design ===========================
+=================================== 20/05/2022 ================================*/
+
+.map-parent {
+    -webkit-box-shadow: 0 6px 20px 0 rgb(0 0 0 / 8%);
+    background: #fff;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.map-content {
+    flex-basis: 45%;
+    padding: 50px;
+}
+
+.map-child {
+    flex-basis: 55%;
+    position: relative;
+}
+
+.map-child img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.map-child-small {
+    width: max-content;
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+
+.map-child-small img {
+    width: 400px;
+}
+
+@media screen and (max-width: 576px) {
+    .map-child-small img {
+        width: 200px;
+    }
+    
+    .map-child-small {
+        top: 0;
+    }
+}
+
+.map-content h2 {
+    color: #2e3333;
+    font-size: 40px;
+    line-height: 48px;
+    width: 80%;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 20px;
+}
+
+.map-content p {
+    width: 80%;
+    font-size: 20px;
+    line-height: 30px;
+    color: #2e3333;
+}
+
+.map-button-parent {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 30px;
+}
+
+.map-button-parent a img {
+    width: 165px;
+}
+
+.map-button-parent a {
+    margin-right: 5px;
+}
+
+/*=================================== Shah Jalal ================================
+=========================== Map Section Responsive Design ===========================
+=================================== 20/05/2022 ================================*/
+
+@media screen and (max-width: 992px) {
+    .map-content {
+        padding: 30px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .map-parent {
+        flex-direction: column;
+    }
+    
+    .map-child iframe {
+        height: 400px;
+    }
+    
+    .map-content p,
+    .map-content h2 {
+        width: 100%;
+    }
+    
+    .map-content h2 {
+        font-size: 30px;
+        line-height: 35px;
+    }
+    
+    .map-content {
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .map-button-parent {
+        flex-direction: column;
+    }
+    
+    .map-button-parent a {
+        margin-right: 0;
+        margin: 10px;
+    }
+    
+    .map-content p,
+    .map-content h2 {
+        text-align: center;
+    }
+}
+
+/*=================================== Shah Jalal ================================
+=============================== Offer Section Design ===========================
+=================================== 20/05/2022 ================================*/
+
+.offer {
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    color: #fff;
+    margin-top: 60px;
+    background: #FF6B35;
+    position: relative;
+}
+
+.offer::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    background-image: url("../images/merch-itemrow@2x.09d506d7.svg");
+    background-position: 50%;
+    width: 100%;
+    height: 84px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+}
+
+.offer h2 {
+    font-size: 60px;
+    line-height: 80px;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    padding-top: 40px;
+}
+
+.offer p.need-midweek {
+    font-size: 22px;
+    line-height: 33px;
+    font-weight: 400;
+    color: #fff;
+    margin-top: 15px;
+}
+
+.offer p.service-delivery {
+    font-size: 14px;
+    line-height: 20px;
+    color: #fff;
+    font-weight: 400;
+}
+
+.offer p.service-delivery a {
+    color: #004D87;
+}
+
+/*
+.offer h2 {
+    position: relative;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+*/
+
+/*
+.offer h2::before {
+    content: "";
+    position: absolute;
+    left: -100px;
+    top: 20px;
+    background-image: url("../images/merch-sparkleleft@2x.90d6981a.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100px;
+    display: block;
+    height: 100px;
+    
+}
+*/
+
+/*=================================== Shah Jalal ================================
+=========================== Offer Responsive Section Design ===========================
+=================================== 20/05/2022 ================================*/
+
+@media screen and (max-width: 768px) {
+    .offer h2 {
+        font-size: 35px;
+        line-height: 40px;
+    }
+    
+    .offer {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .offer p.need-midweek {
+        margin-top: 5px;
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .offer p.need-midweek {
+        font-size: 16px;
+    }
+    
+    .offer p.service-delivery {
+        font-size: 12px;
+    }
+    
+    .offer p.service-delivery a {
+        font-size: 12px;
+    }
+}
+
+/*=================================== Shah Jalal ================================
+=============================== Get Start Section Design ===========================
+=================================== 20/05/2022 ================================*/
+
+.get-start {
+    margin: 60px 0;
+}
+
+.get-start-box {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+}
+
+.get-start-box::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(355.15deg,#2e3333 3.92%,transparent 96.1%);
+    top: 0;
+    left: 0;
+}
+
+.get-start-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.get-start-box-content {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    z-index: 10;
+}
+
+.get-start-box-content h3 {
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.get-start-box-content p {
+    font-size: 18px;
+    color: #fff;
+    width: 74%
+}
+
+.get-start-box-content a {
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+    padding: 0 30px;
+    border-radius: 5px;
+    background: #fff;
+    color: #2e3333;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.get-start-box-content a i.fa-arrow-right-long {
+    color: #FF6B35;
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 576px) {
+    .get-start-box-content p {
+        width: 90%;
+        font-size: 14px;
+    }
+    
+    .get-start-box-content h3 {
+        font-size: 24px;
+    }
+    
+    .get-start-box {
+        height: 400px;
+    }
+}
+
+/*=================================== Shah Jalal ================================
+=============================== Footer Section Design ===========================
+=================================== 20/05/2022 ================================*/
+
+footer {
+    padding-bottom: 20px;
+    background: #FF6B35;
+}
+
+footer .footer-box {
+    padding: 30px 25px;
+    background: #FF7A4A;
+    height: 100%;
+    border-radius: 3px;
+}
+
+footer .footer-box h3 {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #fff;
+}
+
+footer .footer-box ul {
+    margin: 0;
+    padding: 0;
+}
+
+footer .footer-box ul li a {
+    font-size: 14px;
+    line-height: 22px;
+    color: #fff;
+    transition: .3s;
+}
+
+/*
+footer .footer-box ul li a:hover {
+    color: #FF6B35;
+}
+*/
+
+footer .footer-box a img {
+    width: 150px;
+}
+
+footer .footer-box a.footer-app-btn {
+    display: block;
+    width: max-content;
+    margin-top: 15px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.copyright {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.copyright ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.copyright ul li {
+    margin-right: 20px;
+}
+
+.copyright ul li a i {
+    color: #fff;
+    font-size: 25px;
+    transition: .3s;
+}
+
+/*
+.copyright ul li a i:hover {
+    color: #FF6B35;
+}
+*/
+
+.copyright p {
+    color: #585c5c;
+}
+
+/*=================================== Shah Jalal ================================
+=========================== Indian Takeaway page Design ===========================
+=================================== 20/05/2022 ================================*/
+
+.takeaway-hero {
+    width: 100%;
+    background-image: url("../images/indian.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    position: relative;
+}
+
+@media screen and (max-width: 1700px) {
+    .takeaway-hero {
+        background-size: contain;
+    }    
+}
+
+.takeaway-hero::after {
+    content: "";
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #FF6B35;
+}
+
+.takeaway-content {
+    position: relative;
+    z-index: 100;
+    padding-top: 50px;
+    height: 420px;
+}
+
+.takeaway-content .breadcrumb-item a {
+    color: #fff;
+    text-decoration: underline !important;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    color: #fff;
+}
+
+.breadcrumb-item.active {
+    color: #fff;
+}
+
+.takeaway-content h2 {
+    color: #fff;
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    z-index: 100;
+}
+
+.takeaway-content p {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    margin-top: 15px;
+    position: relative;
+    z-index: 100;
+}
+
+.takeaway-content::after {
+    content: "";
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    height: 100%;
+    width: 200px;
+    background: #FF6B35;
+    position: absolute;
+    top: 0;
+    right: -100px;
+    display: block;
+    border-bottom: 2px solid #FF6B35; 
+}
+
+.takeaway-right {
+    height: 420px;
+}
+
+@media screen and (max-width: 992px) {
+    .takeaway-hero {
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .takeaway-hero::after {
+        width: 100%;
+        height: 50%;
+        top: unset;
+        bottom: 0;
+    }
+    
+    .takeaway-hero {
+        background-position: top;
+    }
+    
+    .takeaway-content::after {
+/*        clip-path: polygon(0 24%, 100% 0%, 100% 100%, 0% 100%);*/
+/*
+        clip-path: unset;
+        top: -100px;
+        width: 100vw;
+        height: 200px;
+        right: 0;
+        left: 0;
+        border-bottom: unset;
+*/
+        clip-path: unset;
+        top: unset;
+        width: unset;
+        height: unset;
+        right: unset;
+        left: unset;
+        border-bottom: unset;
+    }
+}
+
+.takeaway-search-box-child {
+    padding: 45px 40px;
+    background: #fff;
+    box-shadow: 0 1px 4px rgb(0 0 0 / 8%);
+    position: relative;
+    z-index: 200;
+    margin-top: -80px;
+    border-radius: 8px;
+}
+
+.takeaway-search-box-child p.search-top-para {
+    color: #2e3333;
+    margin-bottom: 10px;
+}
+
+.takeaway-search-box-child p.search-bottom-para {
+    font-size: 14px;
+    line-height: 19px;
+    color: #585c5c;
+    margin-top: 15px;
+}
+
+.takeaway-search-box-child p.search-bottom-para a {
+    color: #FF6B35;
+}
+
+.takeaway-search-box-child .search-field-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.takeaway-search-box-child .search-field-box input {
+    flex-basis: 85%;
+    height: 50px;
+    padding: 0 15px;
+    border: 1px solid #e8ebeb;
+    box-shadow: inset 0 2px 4px rgb(0 0 0 / 5%), inset 0 0 0 100px #fff;
+    border-radius: 4px;
+}
+
+.takeaway-search-box-child .search-field-box button {
+    height: 50px;
+    padding: 0 15px;
+    outline: none;
+    border: none;
+    background: #FF6B35;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 400px) {
+    .takeaway-search-box-child .search-field-box input {
+        width: 150px;
+    } 
+}
+
+.best-rated {
+    margin-top: 100px;
+}
+
+.best-rated h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: -.02em;
+    font-weight: 600;
+    color: #2e3333;
+}
+
+.best-rated .filter-by-city {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.best-rated .filter-by-city p {
+    margin-bottom: 0;
+    width: max-content;
+}
+
+.best-rated .filter-by-city ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 80%;
+}
+
+.best-rated .filter-by-city ul li {
+    margin-left: 50px;
+    color: #FF6B35;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 576px) {
+    .best-rated .filter-by-city ul {
+        width: 70%;
+    }  
+    
+    .best-rated .filter-by-city ul li {
+        margin-left: 20px;
+    }
+    
+    .best-rated h2 {
+        font-size: 22px;
+        line-height: 25px;
+    }
+}
+
+.responsive-filter {
+    overflow: auto;
+}
+
+.indian-takeaway-cart-single {
+    height: 100%;
+    border-radius: 3px;
+    border: 1px solid rgba(0,0,0,.04);
+    box-shadow: 0 1px 4px rgb(0 0 0 / 8%);
+    padding-bottom: 20px;
+}
+
+.indian-takeaway-cart-single img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.indian-takeaway-cart-single .takeaway-cart-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, .04);
+}
+
+.indian-takeaway-cart-single .takeaway-cart-header h3 {
+    font-size: 16px;
+    line-height: 22px;
+    color: #2e3333;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.indian-takeaway-cart-single .takeaway-cart-header p {
+    font-size: 14px;
+    line-height: 19px;
+    color: #FF6B35;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.indian-takeaway-cart-single .takeaway-cart-header p span {
+    color: #585c5c;
+}
+
+.indian-takeaway-cart-single .takeaway-cart-header p i.fa-star {
+   color: #FF6B35; 
+}
+
+.indian-takeaway-cart-single .takeaway-cart-header-content {
+    margin-left: 15px;
+}
+
+.indian-takeaway-cart-single .takeaway-cart-body {
+    margin: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, .04);
+}
+
+.indian-takeaway-cart-single .takeaway-cart-body:last-child {
+    border-bottom: unset; 
+}
+
+.indian-takeaway-cart-single .takeaway-cart-body-star {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.indian-takeaway-cart-single .takeaway-cart-body-star p {
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 19px;
+    color: #585c5c;
+}
+
+.indian-takeaway-cart-single .takeaway-cart-body-star i {
+    color: #a3afaf;
+}
+
+.indian-takeaway-cart-single p.takeaway-cart-body-para {
+    margin-top: 10px;
+}
+
+.deliveroo-works-child {
+    height: 400px;
+    background: #FABE00;
+    padding: 25px;
+    border-radius: 4px;
+    position: relative;
+}
+
+.deliveroo-works-child.second {
+    background: #FB5058;
+}
+
+.deliveroo-works-child.thurd {
+    background: #9C006D;
+}
+
+.deliveroo-works-child h3 {
+    font-size: 28px;
+    line-height: 36px;
+    color: #fff;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.deliveroo-works-child .deliveroo-works-child-img {
+    width: max-content;
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+}
+
+.deliveroo-works-child.first::after,
+.deliveroo-works-child.second::after,
+.deliveroo-works-child.thurd::after {
+    content: "";
+    width: calc(100% + 10px);
+    height: 180px;
+    display: block;
+    clip-path: polygon(0 40%, 100% 0%, 100% 100%, 0% 100%);
+    background: #fff;
+    position: absolute;
+    bottom: -5px;
+    left: -5px;
+}
+
+.deliveroo-works-child.second::after {
+    clip-path: polygon(0 0, 100% 40%, 100% 100%, 0% 100%);
+}
+
+.how-deliveroo-works {
+    margin-top: 50px;
+}
+
+.can-we-take-your-order h2,
+.other-cuisines h2,
+.choose-your-city h2,
+.how-deliveroo-works h2 {
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: 600;
+    color: #2e3333;
+    font-family: 'Roboto', sans-serif;
+}
+
+.choose-your-city {
+    background: #F9FAFA;
+    margin-top: 50px;
+    padding: 30px 0;
+}
+
+.choose-your-city ul li {
+    margin-bottom: 15px;
+}
+
+.choose-your-city ul li a {
+    color: #FF6B35;
+}
+
+.other-cuisines {
+    background: #F9FAFA;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.other-cuisines a.other-cuisines-single {
+    display: block;
+    box-shadow: 0 1px 4px rgb(0 0 0 / 8%);
+    border-radius: 3px;
+    height: 100%;
+    border: 1px solid rgba(0,0,0,.08);
+    overflow: hidden;
+}
+
+.other-cuisines a.other-cuisines-single img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.other-cuisines .other-cuisines-single-content h3 {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #2e3333;
+}
+
+.other-cuisines .other-cuisines-single-content p {
+    color: #585c5c;
+}
+
+.other-cuisines-single-content {
+    padding: 20px;
+}
+
+.other-cuisines .other-cuisines-single-content span {
+    color: #FF6B35;
+    display: block;
+    font-weight: 500;
+}
+
+.other-cuisines .other-cuisines-single-content span i {
+    color: #FF6B35;
+    margin-left: 5px;
+    margin-top: 30px;
+}
+
+.can-we-take-your-order {
+    padding: 40px 0;
+    background: #FF6B35;
+}
+
+.take-your-order-search-child {
+    margin-top: 20px;
+    width: 800px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.can-we-take-your-order h2 {
+    color: #fff;
+    text-align: center;
+}
+
+/*=================================== Shah Jalal ================================
+================================ Cuisines page Design ===========================
+=================================== 20/05/2022 ================================*/
+
+.cuisines {
+    background: #FF6B35;
+    padding: 32px 0;
+}
+
+.cuisines h2 {
+    color: #fff;
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 600;
+    padding-top: 50px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.cuisines p {
+    color: #fff;
+    margin-bottom: 0;
+}
+
+/*=================================== Shah Jalal ================================
+================================= FAQ page Design ===========================
+=================================== 20/05/2022 ================================*/
+.faq-parent-bg {
+    background: #F9FAFA;
+}
+
+.faq {
+    width: 100%;
+    height: 300px;
+    display: block;
+    clip-path: polygon(0 0, 100% 0%, 100% 55%, 0% 100%);
+    background: #FF6B35;
+}
+
+.faq h2 {
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 600;
+    padding: 32px 0;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+.faq-parent {
+    padding-bottom: 50px;
+    margin-top: -200px;
+    position: relative;
+    z-index: 200;
+}
+
+.faq-parent .list-group-item {
+    border: none;
+    border-bottom: 1px solid #e8ebeb;
+    padding: 16px;
+    background: #fff;
+    color: #FF6B35;
+}
+
+.faq-parent .list-group-item:last-child {
+    border-bottom: none;
+}
+
+.faq-parent .faq-coronavirus {
+    background: #fff;
+    padding: 35px 30px;
+    border-radius: 4px;
+}
+
+.faq-parent .faq-coronavirus h2 {
+    font-size: 28px;
+    line-height: 36px;
+    color: #2e3333;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+
+.faq-parent .faq-coronavirus h3 {
+    font-size: 24px;
+    line-height: 36px;
+    color: #2e3333;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    margin: 17px 0;
+}
+
+.faq-parent .faq-coronavirus ul {
+    padding: inherit;
+}
+
+.faq-parent .faq-coronavirus ul li {
+    list-style: disc;
+}
+
+@media screen and (max-width: 576px) {
+    .faq h2 {
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    .faq {
+        width: 100%;
+        height: 300px;
+    }
+
+    .faq-parent {
+        margin-top: -200px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .faq {
+        width: 100%;
+        height: 330px;
+    }
+}
+
+/*=================================== Shah Jalal ================================
+================================= Gift Cards page Design ===========================
+=================================== 22/05/2022 ================================*/
+
+.buy-gift-card {
+    margin-top: 15px;
+    margin-bottom: 70px;
+}
+
+.takeaway-hero.gift-cards-hero {
+    background-image: url("../images/gift_cards_promo_large_uk_1280x853.jpg");
+}
+
+.takeaway-hero .takeaway-right {
+    background: #017F8D;
+    position: relative;
+    z-index: -1;
+}
+
+.buy-gift-card .buy-gift-card-child {
+    border: 1px solid rgba(0, 0, 0, .08);
+    box-shadow: 0 1px 4px rgb(0 0 0 / 8%);
+    border-radius: 3px;
+    padding: 24px;
+}
+
+.buy-gift-card .buy-gift-card-img {
+    height: 143px;
+    width: 143px;
+    margin-right: 24px;
+}
+
+.buy-gift-card .buy-gift-card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.buy-gift-card .buy-gift-card-single {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.buy-gift-card .buy-gift-card-content h3 {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif; 
+}
+
+.buy-gift-card .buy-gift-card-content p,
+.buy-gift-card .buy-gift-card-content ul li {
+    color: #585c5c;
+}
+
+.buy-gift-card .buy-gift-card-content ul li {
+    list-style-type: disc;
+}
+
+.buy-gift-card .buy-gift-card-content ul {
+    padding-left: 17px;
+}
+
+.buy-gift-card .buy-gift-card-link {
+    border-top: 1px solid rgba(0, 0, 0, .08);
+    padding-top: 15px;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.buy-gift-card .buy-gift-card-link a {
+    color: #FF6B35;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 500;
+}
+
+.buy-gift-card .buy-gift-card-link a i {
+    color: #FF6B35;
+    margin-left: 5px;
+}
+
+@media screen and (max-width: 576px) {
+    .buy-gift-card .buy-gift-card-img {
+        margin-bottom: 20px;
+        margin-right: unset;
+    }
+    
+    .buy-gift-card .buy-gift-card-single {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.frequently-asked-questions-buygiftcard {
+    margin-bottom: 70px;
+    position: relative;
+}
+
+.frequently-asked-questions-buygiftcard h2.h2.head {
+    font-size: 28px;
+    line-height: 36px;
+    color: #2e3333;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+}
+
+.frequently-asked-questions-buygiftcard h2 button {
+    color: #2e3333;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 35px;
+    margin-bottom: 10px;
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #fff;
+    box-shadow: unset !important;
+    color: #2e3333;
+}
+
+.accordion-button:focus {
+    border: none;
+    box-shadow: unset !important;
+}
+
+.frequently-asked-questions-buygiftcard .accordion-body a {
+    color: #FF6B35;
+}
+
+.frequently-asked-questions-buygiftcard .accordion-body ul li {
+    list-style: disc;
+}
+
+.frequently-asked-questions-buygiftcard .accordion-body ul {
+    padding-left: 18px
+}
+
+.frequently-asked-questions-buygiftcard .accordion-body {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.frequently-asked-questions-buygiftcard .accordion-flush .accordion-item:last-child {
+    border-bottom: 1px solid rgba(0,0,0,.125);
+}
+
+.frequently-asked-questions-buygiftcard .accordion-button {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/*=================================== Shah Jalal ================================
+==================== Modern slavery act statement page Design ===========================
+=================================== 22/05/2022 ================================*/
+
+.modern-slavery-act-statement {
+    height: 250px;
+    width: 100%;
+    background-image: url(../images/teal-food-bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.modern-slavery-act-statement h2 {
+    font-size: 40px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    padding-top: 140px;
+}
+
+.modern-slavery-act-body {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    margin-bottom: 35px;
+    max-width: 100%;
+}
+
+.modern-slavery-act-body p,
+.modern-slavery-act-body a {
+    color: #626666;
+    font-size: 0.9rem;
+    line-height: 1.5em;
+}
+
+.modern-slavery-act-body a {
+   color: #FF6B35;
+   transition: .3s;
+   font-weight: 500; 
+}
+
+.modern-slavery-act-body a:hover {
+    color: #626666;
+}
+
+@media screen and (max-width: 576px) {
+    .faq-parent .faq-coronavirus {
+        padding: 30px 15px;
+    }    
+}
+
+/*=================================== Shah Jalal ================================
+==================== Find out more about Deliveroo page Design ===========================
+=================================== 24/05/2022 ================================*/
+
+.find-out-more-about-eliveroo.other-cuisines a.other-cuisines-single img {
+    height: 260px;
+}
+
+.find-out-more.other-cuisines h3 {
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 700;
+    color: #2e3333;
+    padding: 16px 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.find-out-more.other-cuisines a.other-cuisines-single img {
+    height: 200px;
+}
+
+/*=================================== Shah Jalal ================================
+==================== Top rated takeaways aberdeen page Design ===========================
+=================================== 24/05/2022 ================================*/
+
+.top-rated-takeaways-aberdeen {
+    margin-top: 60px;
+}
+
+.top-rated-takeaways-aberdeen h2 {
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: 600;
+    color: #2e3333;
+    padding-top: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.top-rated-takeaways-aberdeen-parent {
+    display: block;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 1px 4px rgb(0 0 0 / 8%);
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.top-rated-takeaways-aberdeen-parent .top-rated-takeaways-aberdeen-img {
+    width: 100%;
+    height: 180px;
+}
+
+.top-rated-takeaways-aberdeen-parent .top-rated-takeaways-aberdeen-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.top-rated-takeaways-aberdeen-parent .top-rated-takeaways-aberdeen-content {
+    padding: 24px;
+}
+
+.top-rated-takeaways-aberdeen-parent .top-rated-takeaways-aberdeen-content h3 {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #2e3333;
+    font-family: 'Roboto', sans-serif;
+}
+
+.top-rated-takeaways-aberdeen-parent .top-rated-takeaways-aberdeen-content ul {
+    padding-left: 16px;
+}
+
+.top-rated-takeaways-aberdeen-parent .top-rated-takeaways-aberdeen-content ul li {
+    list-style: disc;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    margin-bottom: 7px;
+}
+
+.top-rated-takeaways-aberdeen-parent .top-rated-takeaways-aberdeen-content ul li strong {
+    color: #585c5c;
+    font-weight: 600;
+}
+
+.top-rated-takeaways-aberdeen-parent .top-rated-takeaways-aberdeen-content .view-majestic {
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: 70px;
+    font-weight: 500;
+    color: #FF6B35;
+}
+
+.top-rated-takeaways-aberdeen-parent .top-rated-takeaways-aberdeen-content .view-majestic i {
+    margin-left: 5px;
+    color: #FF6B35;
+}
+
+/*=================================== Shah Jalal ================================
+================================ Filter page Design ===========================
+=================================== 24/05/2022 ================================*/
+
+.filter .filter-sidebar-bottom .form-check label span {
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: 400;
+    color: #2e3333;
+}
+
+.filter .filter-sidebar {
+    position: sticky;
+    top: 0;
+}
+
+.filter .filter-sidebar-bottom .form-check label span:last-child {
+    color: #8c9b9b;
+    margin-left: 4px;
+}
+
+.form-check-input:checked {
+    background:#FF6B35;
+    border-color:#FF6B35;
+}
+
+.form-check-input:focus {
+    box-shadow: 0 0 0 0.25rem rgb(255 107 53 / 25%);
+}
+
+.filter .filter-sidebar-top .delivery-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    cursor: pointer;
+}
+
+.filter .filter-sidebar-top .delivery-man-img-parent {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.filter .filter-sidebar-top .delivery-man-img img {
+    width: 50px;
+}
+
+.accordion-button::after {
+    background-image: url("../images/aarrow_down_icon.png");
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url("../images/aarrow_down_icon.png");
+}
+
+.frequently-asked-questions-buygiftcard .accordion-flush .accordion-item,
+.frequently-asked-questions-buygiftcard .accordion-flush .accordion-item:last-child {
+    border-bottom: 1px solid #e8ebeb;
+}
+
+.filter h2 button {
+    line-height: 24px;
+    font-weight: 700;
+    font-size: 14px;
+    color: #2e3333;
+}
+
+.filter .filter-sidebar-top .delivery-man-img-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.filter .filter-sidebar-top .delivery-main {
+   border-bottom: 1px solid #e8ebeb;
+    padding-bottom: 20px;
+    padding-top: 30px;
+}
+
+.filter .filter-sidebar-top .delivery-main .delivery-man-img-content span:first-child {
+    color: #585c5c;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+}
+
+.filter .filter-sidebar-top .delivery-main .delivery-man-img-content span:last-child {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 600;
+    color: #000;
+}
+
+.filter .filter-sidebar-top .delivery-main .delivery-man-img-content {
+    margin-left: 10px;
+}
+
+.filter .filter-sidebar-top .delivery-main > span {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+    color: #FF6B35;
+}
+
+.filter .filter-sidebar-bottom h2 button {
+    margin-top: 10px;
+}
+
+.filter .filter-sidebar-bottom .accordion-body {
+    padding-top: 0;
+}
+
+.filter .filter-sidebar-middle {
+    border-bottom: 1px solid #e8ebeb;
+    padding-bottom: 15px;
+}
+
+.filter .filter-sidebar-bottom {
+    height: 500px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #999;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.filter .filter-top-slick-child {
+/*
+    width: 167px;
+    min-width: 167px;
+*/
+    height: 88px;
+    position: relative;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+/*
+.filter .filter-top-slick-child .filter-top-slick-child-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/burger.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 4px;
+}
+*/
+
+.filter .filter-top-slick-child h4 {
+    position: relative;
+    z-index: 11;
+}
+
+.filter .filter-top-slick-child .filter-top-slick-child-img {
+    background: #00CCBC;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+}
+
+.filter .filter-top-slick-child .filter-top-slick-child-img img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    right: 0;
+    z-index: 10
+}
+
+.filter .filter-top-slick-child h4 {
+    position: absolute;
+    bottom: 10px;
+    left: 5px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 700;
+    line-height: 19px;
+    margin-bottom: 0;
+}
+
+.slick-prev,
+.slick-next {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    z-index: 100 !important;
+    overflow: hidden;
+    box-shadow: 0 1px 4px rgb(0 0 0 / 8%) !important;
+}
+
+.slick-prev::before,
+.slick-next::before {
+    display: none;
+}
+
+.slick-prev::after,
+.slick-next::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    z-index: 50 !important;
+}
+
+.slick-next::after {
+    background-image: url("../images/long_arrow_alt_right_solid_icon.png") !important;
+    background-repeat: no-repeat !important;
+    background-position: center!important;
+    border-radius: 50%;
+    z-index: 100 !important;
+    border: 1px solid rgba(0,0,0,.04) !important;
+    box-shadow: 0 1px 4px rgb(0 0 0 / 8%) !important;
+    overflow: hidden;
+    transition: .3s;
+}
+
+.slick-prev::after {
+    background-image: url("../images/long_arrow_alt_left_solid_icon.png") !important;
+    background-repeat: no-repeat !important;
+    background-position: center!important;
+    z-index: 100 !important;
+    border: 1px solid rgba(0,0,0,.04) !important;
+    box-shadow: 0 1px 4px rgb(0 0 0 / 8%) !important;
+    overflow: hidden;
+    border-radius: 50%;
+    transition: .3s;
+}
+
+.slick-prev:hover::after,
+.slick-next:hover::after {
+    box-shadow: 0 6px 20px rgb(0 0 0 / 8%) !important;
+}
+
+.slick-prev {
+    left: -20px;
+}
+
+.slick-next {
+    right: -20px;
+}
+
+.filter h2.head-2 {
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 700;
+    color: #2e3333;
+    padding: 20px 0;
+}
+
+.filter-top-slick-parent-2 .filter-top-slick-single-2 {
+    height: 172px;
+    padding: 0 5px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.filter-top-slick-parent-2 .filter-top-slick-child-2 {
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+
+.filter-top-slick-parent-2 .filter-top-slick-child-2 img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.filter-top-slick-parent-2 {
+    margin-top: 20px;
+}
+
+.get-groceries-in-minutes-parent {
+    display: flex;
+    height: 250px;
+    border: 1px solid rgba(0, 0, 0, .08);
+    border-radius: 4px;
+    box-shadow: 0 1px 4px 0 rgb(0 0 0 / 8%);
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.get-groceries-in-minutes-parent .get-groceries-in-minutes-img {
+    height: 100%;
+    flex-basis: 45%;
+}
+
+.get-groceries-in-minutes-parent .get-groceries-in-minutes-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.get-groceries-in-minutes-parent .get-groceries-in-minutes-content {
+    flex-basis: 55%;
+    padding: 24px;
+    background: #F9FAFA;
+}
+
+.filter p {
+    color: #585c5c;
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: 400;
+}
+
+.get-groceries-in-minutes-parent .get-groceries-in-minutes-content p.Supermarket {
+    margin: 0;
+        font-size: 16px;
+    line-height: 22px;
+    color: #111;
+    margin-left: 10px;
+}
+
+.get-groceries-in-minutes-parent .get-groceries-in-minutes-content button {
+    font-weight: 600;
+    font-size: 16px;
+    padding: 8px 12px;
+    color: #fff;
+    background: #FF6B35;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    display: block;
+    width: max-content;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 992px) {
+    .get-groceries-in-minutes-parent {
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .get-groceries-in-minutes-parent .get-groceries-in-minutes-img {
+        height: 250px;
+    }
+    
+    .get-groceries-in-minutes-parent .get-groceries-in-minutes-img img {
+        height: 250px;
+    }
+}
+
+.filter-bottom-parent {
+    margin-top: 10px;
+}
+
+.filter-bottom-child {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 1px 4px rgb(0 0 0 / 8%), 0 0 0 1px rgb(0 0 0 / 4%);
+    border-radius: 3px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.filter-bottom-child .filter-bottom-child-img {
+    width: 100%;
+    height: 150px;
+    position: relative;
+}
+
+.filter-bottom-child .filter-bottom-child-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.filter-bottom-child .filter-bottom-child-img .free-delivery {
+    width: max-content;
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: 600;
+    color: #fff;
+    background: linear-gradient(90deg, rgb(217, 61, 50) 0%, rgb(166, 47, 38) 68.24%);
+    padding: 2px 4px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.filter-bottom-child .filter-bottom-child-img .minutes {
+    background: #fff;
+    padding: 5px 12px;
+    position: absolute;
+    right: 10px;
+    bottom: -10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    box-shadow: 0 4px 14px -4px rgb(0 0 0 / 8%);
+}
+
+.filter-bottom-child .filter-bottom-child-img .minutes span:first-child {
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(46, 51, 51);
+}
+
+.filter-bottom-child .filter-bottom-child-img .minutes span:last-child {
+    font-size: 12px;
+    font-weight: 400;
+    
+}
+
+.filter-bottom-child .filter-bottom-child-content {
+    padding: 10px;
+}
+
+.filter-bottom-child .filter-bottom-child-content h4 {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 600;
+    color: #2e3333;
+    margin: 0;
+}
+
+.filter-bottom-child .filter-bottom-child-content .filter-bottom-child-content-star span {
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: 400;
+    color: #FF6B35;
+}
+
+.filter-bottom-child .filter-bottom-child-content .filter-bottom-child-content-star i {
+    color: #FF6B35;    
+}
+
+.filter-bottom-child .filter-bottom-child-content .filter-bottom-child-content-star span:last-child {
+    color: rgb(88, 92, 92);
+}
+
+.filter-bottom-child .filter-bottom-child-content span.last {
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: 400;
+    color: rgb(88, 92, 92);
+}
+
+.filter-bottom-parent .filter-bottom-single {
+    padding: 0 5px;
+    padding-bottom: 10px;
+}
+
+.filter-bottom-parent-1 .filter-bottom-child {
+    width: unset;
+}
+
+h2.head-2 span {
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: 400;
+    color: #FF6B35;
+    margin-left: 15px;
+}
+
+.filter-all-show-button button {
+    display: block;
+    width: 100%;
+    height: 50px;
+    outline: none;
+    margin-top: 25px;
+    border-radius: 4px;
+    border: 1px solid #eee;
+    background: #fff;
+    color: #FF6B35;
+}
+
+/*=================================== Shah Jalal ================================
+====================== Dobry express king street page Design ====================
+=================================== 24/05/2022 ================================*/
+
+.dobry-express-king-street .dobry-express-king-street-top-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.dobry-express-king-street .dobry-express-king-street-top-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.dobry-express-king-street .dobry-express-king-street-top-content h1 {
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 600;
+}
+
+.dobry-express-king-street .dobry-express-king-street-top-content p {
+    margin-bottom: 5px;
+}
+
+.dobry-express-king-street .dobry-express-king-street-top-content .span-parent .span-child,
+.dobry-express-king-street .dobry-express-king-street-top-content .span-parent i {
+    color:#FF6B35;     
+}
+
+.dobry-express-king-street .dobry-express-king-street-top-content-child {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+    cursor: pointer;
+}
+
+.dobry-express-king-street .dobry-express-king-street-top-content-child i:first-child {
+    margin-right: 10px;
+    color: #abadad;
+}
+
+.dobry-express-king-street .dobry-express-king-street-top-content-child i:last-child {
+    margin-left: 10px;
+    color: #FF6B35;
+}
+
+.dobry-express-king-street .dobry-express-king-street-top-content-child div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.dobry-express-king-street .dobry-express-king-street-top-content-child div span:last-child {
+    font-size: 14px;
+}
+
+.dobry-express-king-street .dobry-express-king-street-top-right div:first-child {
+    display: flex;
+    align-items: center;
+    width: max-content;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.dobry-express-king-street .dobry-express-king-street-top-right div:first-child img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.dobry-express-king-street .dobry-express-king-street-top-right div:first-child span.span-location-selected {
+    margin-right: 10px;
+    color: #e2484f;
+}
+
+.dobry-express-king-street .dobry-express-king-street-top-right div:first-child span:last-child {
+    color: #FF6B35;
+}
+
+.dobry-express-king-street .dobry-express-king-street-top-right div:last-child button {
+    display: block;
+    width: max-content;
+    padding: 5px 12px;
+    margin-left: auto;
+    margin-top: 10px;
+    border: 1px solid #e8ebeb;
+    background-color: #fff;
+    outline: none;
+    border-radius: 3px;
+}
+
+.dobry-express-king-street .dobry-express-king-street-top-right div:last-child button i {
+    color: #FF6B35;    
+}
+
+@media screen and (max-width: 1200px) {
+    .dobry-express-king-street .dobry-express-king-street-top-right div:last-child button,
+    .dobry-express-king-street .dobry-express-king-street-top-right div:first-child {
+        margin-right: auto;
+        margin-left: unset;
+    }
+    
+    .dobry-express-king-street .dobry-express-king-street-top-right {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .dobry-express-king-street .dobry-express-king-street-top-content h1 {
+        font-size: 30px;
+        line-height: 35px;
+    } 
+}
+
+#navbar-example2 {
+    position: sticky;
+    top: 90px;
+}
+
+#scrollspyHeading1,
+#scrollspyHeading2,
+#scrollspyHeading3,
+#scrollspyHeading4,
+#scrollspyHeading5 {
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 700;
+    color: #2e3333;
+    margin-top: 25px;
+    margin-bottom: 0;
+}
+
+/*
+.dobry-express-king-street-main-parent {
+    display: flex;
+}
+
+.dobry-express-king-street-main-parent .dobry-express-king-street-main-single {
+    flex-basis: calc(50% - 5px);
+}
+
+.dobry-express-king-street-main-parent .dobry-express-king-street-main-single:nth-child(even) {
+    margin-left: 10px;
+}
+*/
+
+.dobry-express-king-street-main-parent .dobry-express-king-street-main-content {
+    display: flex;
+    padding: 15px;
+    box-shadow: 0 1px 4px rgb(0 0 0 / 8%);
+    border-radius: 4px;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, .04);
+    cursor: pointer;
+    overflow: hidden;
+    justify-content: flex-end;
+    transition: .3s;
+}
+
+.dobry-express-king-street-main {
+    position: relative;
+}
+
+.scroll-spy-position-sticky {
+    position: sticky;
+    top: 79px;
+    height: 80px;
+    background: #fff;
+    border-top: 1px solid rgba(0,0,0,.08);
+    border-bottom: 1px solid rgba(0,0,0,.08);
+    box-shadow: 0 2px 4px rgb(0 0 0 / 5%);
+    z-index: 100;
+}
+
+#mySidenav {
+    z-index: 10000;
+}
+
+.scroll-spy-position-sticky ul li a {
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: 400;
+    color: #FF6B35;
+}
+
+.scroll-spy-position-sticky ul li a:hover {
+    color: #FF6B35;    
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    background: #FF6B35;
+}
+
+.dobry-express-king-street-main-parent .dobry-express-king-street-main-content:hover {
+    box-shadow: 0 22px 24px 0 rgb(0 0 0 / 8%);
+}
+
+.dobry-express-king-street-main-parent .dobry-express-king-street-main-content-first {
+    margin-right: auto;
+}
+
+.dobry-express-king-street-main-parent .dobry-express-king-street-main-content-first h4 {
+    font-size: 16px;
+    line-height: 22px;
+    color: #2e3333;
+    font-weight: 600;
+}
+
+.dobry-express-king-street-main-parent .dobry-express-king-street-main-content-first p {
+    font-size: 16px;
+    line-height: 22px;
+    color: #585c5c;
+    font-weight: 400;
+}
+
+.dobry-express-king-street-main-parent .dobry-express-king-street-main-content-second img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 1px solid rgba(0,0,0,.08);
+    border-radius: 3px;
+    margin-left: 16px;
+}
+
+.dobry-express-king-street-main-parent .dobry-express-king-street-main-content-thurd button {
+    height: 100%;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 16px;
+    outline: none;
+    border: 1px solid rgba(0,0,0,.08);
+    border-radius: 3px;
+    background: #fff;
+}
+
+.dobry-express-king-street-main-parent .dobry-express-king-street-main-content-thurd button span {
+    font-size: 30px;
+    font-weight: 400;
+    color: #abadad;
+}
+
+@media screen and (max-width: 576px) {
+    .dobry-express-king-street-main-parent .dobry-express-king-street-main-content-thurd button,
+    .dobry-express-king-street-main-parent .dobry-express-king-street-main-content-second img {
+        margin-left: 3px;
+        height: 100%;
+    }
+    
+    .dobry-express-king-street-main-parent .dobry-express-king-street-main-content {
+        padding: 10px 5px;
+    }
+}
+
+.your-basket-is-empty {
+    width: 100%;
+    border: 1px solid rgba(0,0,0,.04);
+    border-radius: 4px;
+    box-shadow: 0 6px 20px rgb(0 0 0 / 8%);
+    padding: 15px;
+    background: #fff;
+    position: sticky;
+    top: 180px;
+}
+
+.your-basket-is-empty .your-basket-is-empty-content {
+    margin-top: 32px;
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.your-basket-is-empty .your-basket-is-empty-content p {
+    color: #abadad;    
+}
+
+.your-basket-is-empty .your-basket-is-empty-button button {
+    display: flex;
+    width: 100%;
+    cursor: not-allowed;
+    border: none;
+    color: #abadad;
+    background: #e2e5e5;
+    min-height: 48px;
+    padding: 12px 24px;
+    appearance: none;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    cursor: not-allowed;
+}
+
+.your-basket-is-empty .your-basket-is-empty-button button span {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #abadad;
+    cursor: not-allowed;
+}
+
+@media screen and (max-width: 576px) {
+    .cuisines h2 {
+        font-size: 30px;
+        line-height: 35px;
+    }
+    
+    .can-we-take-your-order h2, .other-cuisines h2, .choose-your-city h2, .how-deliveroo-works h2 {
+        font-size: 22px;
+        line-height: 25px;
+    }
+}
+
+/*=================================== Shah Jalal ================================
+====================================== New Code ===========================
+===================================== 31/05/2022 ================================*/
+
+.top-rated-budget-takeaways-parent {
+    margin-top: 50px;
+}
+
+.top-rated-budget-takeaways-parent h2 {
+    font-size: 28px;
+    line-height: 36px;
+    color: #2e3333;
+    font-weight: 600;
+}
+
+.top-rated-budget-takeaways-parent p {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.top-rated-budget-takeaways-child {
+    display: block;
+}
+
+.top-rated-budget-takeaways-img {
+    height: 200px;
+}
+
+.top-rated-budget-takeaways-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.top-rated-budget-takeaways-single {
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.top-rated-budget-takeaways-parent .top-rated-budget-takeaways-content h4 {
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: 600;
+    color: #2e3333;
+    margin-top: 20px;
+    margin-bottom: 2px;
+}
+
+.top-rated-budget-takeaways-parent .top-rated-budget-takeaways-single-content i,
+.top-rated-budget-takeaways-parent .top-rated-budget-takeaways-single-content span.Excellent-span {
+    color: #77bf2a;
+}
+
+.top-rated-budget-takeaways-parent .top-rated-budget-takeaways-single-content span {
+    font-size: 14px;
+}
+
+.header-search-filter-page {
+    width: 600px;
+    appearance: none;
+    -webkit-font-smoothing: subpixel-antialiased;
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 24px;
+    caret-color: #00ccbc;
+    border: 1px solid #e8ebeb;
+    border-radius: 4px;
+    opacity: 1;
+    transition-property: box-shadow;
+    transition-duration: .15s;
+    transition-timing-function: ease-out;
+    height: 50px;
+    background: rgba(0,0,0,.04);
+    padding: 12px 10px 12px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 20px;
+}
+
+.header-search-filter-page input {
+    width: calc(100% - 25px);
+    height: 50px;
+    background: transparent;
+    outline: none;
+    border: none;
+}
+
+.header-search-filter-page i {
+    color: #abadad;    
+}
+
+@media screen and (max-width: 576px) {
+    
+}
+
+.smooth-scroll-slider-child-single-1,
+.smooth-scroll-slider-child-single-2 {
+    height: 120px;
+}
+
+.smooth-scroll-slider-child-single-2 {
+    display: flex;
+    justify-content: space-between;    
+}
+
+.smooth-scroll-slider-child-single-2 img {
+    width: calc(50% - 10px);
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.smooth-scroll-slider-child-single-1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.smooth-scroll-slider-child-single-pad {
+    padding: 10px 10px;
+}
+
+.smooth-scroll-slider-parent {
+    margin-top: -50px;
+}
+
+.smooth-scroll-slider-parent .slick-next::after,
+.smooth-scroll-slider-parent button,
+.smooth-scroll-slider-parent .slick-prev::after {
+    display: none !important;
+}
+
+@media screen and (max-width: 768px) {
+    .smooth-scroll-slider-child-single-pad {
+        padding: 5px 5px;
+    }
+
+    .smooth-scroll-slider-child-single-2 img {
+        width: calc(50% - 5px);
+    }
+
+    .smooth-scroll-slider-child-single-1,
+    .smooth-scroll-slider-child-single-2 {
+        height: 100px;
+    }
+}
+
+.header-right .dropdown-toggle + ul li a {
+    border: none !important;
+    outline: none !important;
+    display: block;
+    width: 100%;
+    margin-left: 0 !important;
+}
+
+.header-right .dropdown-toggle + ul li a:hover {
+    background: #fff !important;
+}
+
+.header-right .dropdown-toggle + ul li {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.header-right .dropdown-toggle + ul {
+    margin-top: 6px !important;
+}
+
+.btn-secondary:focus {
+    box-shadow: unset !important;
+}
+
+.dropdown-toggle::after {
+    border-top-color: #FF6B35;
+}
+
+#mySidenav .accordion-header button img {
+    width: 20px;
+    margin-right: 15px;
+}
+
+.header-right .dropdown-toggle + ul li a img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.select-sidebar-fields .select-options li:hover, .select-options li.is-selected {
+   background: #fff !important; 
+   color: #FF6B35 !important; 
+}
+
+.select-options {
+    top: unset;
+    bottom: 100%;
+}
+
+.header-right .dropdown-menu a {
+    height: 40px;
+}
+
+.header-right .dropdown-menu {
+    padding-bottom: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.sidebar-links .accordion {
+    width: calc(100% + 32px);
+    position: relative;
+    left: -16px;
+}
+
+header .dropdown-toggle {
+    position: relative;
+}
+
+header .dropdown-toggle::after {
+    position: absolute;
+    top: 21%;
+    left: 8px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f107";
+    margin-left: unset;
+    vertical-align: unset;
+    border-top: unset;
+    border-right: unset;
+    border-bottom: unset;
+    border-left: unset;
+    color:#FF6B35; 
+}
+
+.header-right .dropdown button {
+    padding-left: 30px
+}
+
+/*=================================== Shah Jalal ================================
+================================= Login page Design ===========================
+=================================== 20/05/2022 ================================*/
+
+.login-parent {
+    width: 450px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.login-parent h3 {
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 700;
+    color: #2e3333;
+    padding-bottom: 24px;
+    margin-bottom: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.login-parent .facebook-btn,
+.login-parent .google-btn,
+.login-parent .email-btn {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #4c69ba;
+}
+
+.login-parent .facebook-btn i,
+.login-parent .google-btn img,
+.login-parent .email-btn i {
+    margin-right: 13px;
+}
+
+.login-parent .facebook-btn {
+    color: #fff;
+}
+
+.login-parent .facebook-btn i {
+    color: #fff;
+    font-size: 18px;
+}
+
+.login-parent .google-btn {
+    background: #fff;
+    border: 1px solid #a3afaf;
+    color: #2e3333;
+    margin-top: 15px;
+}
+
+.login-parent .email-btn i {
+    color: #fff;
+}
+
+.login-parent .email-btn {
+    background: #FF6B35;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.login-parent .or-line {
+    text-align: center;
+    position: relative;
+    margin: 15px 0;
+    background: #fff;
+    height: 20px;
+}
+
+.login-parent .or-line::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 0;
+    opacity: 0.24;
+    border-bottom: 1px solid #8c9b9b;
+    left: 0;
+    top: 50%;
+    position: absolute;
+}
+
+.login-parent .or-line span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    z-index: 100;
+    padding: 5px 10px;
+}
+
+.login-parent p {
+    font-size: 14px;
+    line-height: 19px;
+    color: #585c5c;
+}
+
+.login-parent p a {
+    font-size: 14px;
+    line-height: 19px;
+    color: #FF6B35;
+}
+
+.login-parent .login-email-2 {
+    background: #fff;
+    color: #333;
+    padding: 0 15px;
+    box-shadow: inset 0 2px 4px rgb(0 0 0 / 5%), inset 0 0 0 100px #fff;
+    border: 1px solid #e8ebeb;
+    font-weight: 400;
+}
+
+.login-parent .forget-btn {
+    background: #fff;
+    color: #FF6B35;
+    border: 1px solid #e8ebeb;
+    font-weight: 500;
+    margin-top: 7px;
+}
+
+.login-parent .forget-continue {
+    color: #abadad;
+    background: #e2e5e5;
+    border: none;
+}
+
+.login-parent .forget-pra {
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

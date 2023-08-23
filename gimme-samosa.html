@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deliveroo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- =================================== Shah Jalal ================================
+     ============================= Header Section Design ===========================
+     =================================== 20/05/2022 ================================ -->
+      
+
+    
+    <header class="single-page-header" style="background: #fff; border-bottom: 1px solid #eee">
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-12 h-100">
+                    <div class="header-parent">
+                        <div class="logo">
+                            <img src="assets/images/OB_Logo.png" alt="">
+                        </div>
+                        <div class="header-right">
+                            <a href=""><i class="fa-solid fa-house-chimney"></i>Sign up or log in</a>
+                            <div class="header-bars" onclick="openNav()"><i class="fa-solid fa-bars"></i> Menu</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div id="mySidenav" class="sidenav">
+        <div class="sidebar-top">
+            <h2>Logo</h2>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa-solid fa-xmark"></i></a>
+        </div>
+        <a class="sign-up" href="">Sign up or log in</a>
+        <ul class="sidebar-links">
+            <li><a href=""><i class="fa-solid fa-circle-question"></i>FAQs</a></li>
+        </ul>
+
+        <div class="select-sidebar-fields">
+            <select id="mounth">
+                <option value="English">English</option>
+                <option value="English">English</option>
+                <option value="English">English</option>
+                <option value="English">English</option>
+                <option value="English">English</option>
+            </select>
+
+            <select id="mounth">
+                <option value="Bangladesh">Bangladesh</option>
+                <option value="Bangladesh">Bangladesh</option>
+                <option value="Bangladesh">Bangladesh</option>
+                <option value="Bangladesh">Bangladesh</option>
+                <option value="Bangladesh">Bangladesh</option>
+                <option value="Bangladesh">Bangladesh</option>
+            </select>
+        </div>
+    </div>
+
+
+    <!-- ============================== Shah Jalal ================================
+     ====================== Dobry express king street Page Design ===========================
+     =================================== 20/05/2022 ================================ -->
+
+    <div class="dobry-express-king-street">
+        <div class="container">
+            <div class="row py-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="dobry-express-king-street-top-image">
+                        <img src="assets/images/image1000.jpeg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-6 mt-4 mt-md-0">
+                    <div class="row">
+                        <div class="col-xl-7">
+                            <div class="dobry-express-king-street-top-content">
+                                <h1>Gimme Samosa - Tooting</h1>
+                                <p>Alcohol·Grocery</p>
+                                <div class="span-parent">
+                                    <i class="fa-solid fa-star"></i>
+                                    <span class="span-child">4.7 Excellent</span>
+                                    <span>(288)</span>.
+                                    <span> Closes at 22:00·£2.50 delivery·£9.00 minimum</span>
+                                </div>
+                                <div class="dobry-express-king-street-top-content-child">
+                                    <i class="fa-solid fa-circle-exclamation"></i>
+                                    <div>
+                                        <span>Info</span>
+                                        <span>Map, allergens and hygiene rating</span>
+                                    </div>
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-5">
+                            <div class="dobry-express-king-street-top-right">
+                                <div>
+                                    <img src="assets/images/delivary-man.png" alt="">
+                                    <span class="span-location-selected">No location selected</span>
+                                    <span>Change</span>
+                                </div>
+                                <div>
+                                    <button type="button"><i class="fa-solid fa-user-group"></i> Start group order</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="dobry-express-king-street-main mb-4">
+       <div class="scroll-spy-position-sticky">
+           <div class="container h-100">
+               <nav id="navbar-example2" class="navbar h-100 px-3">
+                   <ul class="nav nav-pills">
+                       <li class="nav-item">
+                           <a class="nav-link" href="#scrollspyHeading1">First</a>
+                       </li>
+                       <li class="nav-item">
+                           <a class="nav-link" href="#scrollspyHeading2">Second</a>
+                       </li>
+                       <li class="nav-item dropdown">
+                           <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+                           <ul class="dropdown-menu">
+                               <li><a class="dropdown-item" href="#scrollspyHeading3">Third</a></li>
+                               <li><a class="dropdown-item" href="#scrollspyHeading4">Fourth</a></li>
+                               <li>
+                                   <hr class="dropdown-divider">
+                               </li>
+                               <li><a class="dropdown-item" href="#scrollspyHeading5">Fifth</a></li>
+                           </ul>
+                       </li>
+                   </ul>
+               </nav>
+           </div>
+       </div>
+        <div class="container">
+            <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example mt-5" tabindex="0">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <h4 id="scrollspyHeading1">Cigarettes</h4>
+                            <div class="row">
+                                <div class="col-xl-6 mt-4">
+                                    <div class="dobry-express-king-street-main-parent">
+                                        <div class="dobry-express-king-street-main-single">
+                                            <div class="dobry-express-king-street-main-content">
+                                                <div class="dobry-express-king-street-main-content-first">
+                                                    <h4>Lighter</h4>
+                                                    <p>£1.99</p>
+                                                </div>
+                                                <div class="dobry-express-king-street-main-content-second">
+                                                    <img src="assets/images/image104.jpeg" alt="">
+                                                </div>
+                                                <div class="dobry-express-king-street-main-content-thurd">
+                                                    <button><span>+</span></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 mt-4">
+                                    <div class="dobry-express-king-street-main-parent">
+                                        <div class="dobry-express-king-street-main-single">
+                                            <div class="dobry-express-king-street-main-content">
+                                                <div class="dobry-express-king-street-main-content-first">
+                                                    <h4>SWAN Menthol Extra Slim Filter</h4>
+                                                    <p>£0.99</p>
+                                                </div>
+                                                <div class="dobry-express-king-street-main-content-second">
+                                                    <img src="assets/images/image105.jpeg" alt="">
+                                                </div>
+                                                <div class="dobry-express-king-street-main-content-thurd">
+                                                    <button><span>+</span></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 mt-4">
+                                    <div class="dobry-express-king-street-main-parent">
+                                        <div class="dobry-express-king-street-main-single">
+                                            <div class="dobry-express-king-street-main-content">
+                                                <div class="dobry-express-king-street-main-content-first">
+                                                    <h4>RIZLA King Size Green</h4>
+                                                    <p>£1.99</p>
+                                                </div>
+                                                <div class="dobry-express-king-street-main-content-second">
+                                                    <img src="assets/images/image106.jpeg" alt="">
+                                                </div>
+                                                <div class="dobry-express-king-street-main-content-thurd">
+                                                    <button><span>+</span></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 mt-4">
+                                    <div class="dobry-express-king-street-main-parent">
+                                        <div class="dobry-express-king-street-main-single">
+                                            <div class="dobry-express-king-street-main-content">
+                                                <div class="dobry-express-king-street-main-content-first">
+                                                    <h4>RIZLA King Size Green</h4>
+                                                    <p>£1.99</p>
+                                                </div>
+                                                <div class="dobry-express-king-street-main-content-second">
+                                                    <img src="assets/images/image107.jpeg" alt="">
+                                                </div>
+                                                <div class="dobry-express-king-street-main-content-thurd">
+                                                    <button><span>+</span></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 mt-4">
+                                    <div class="dobry-express-king-street-main-parent">
+                                        <div class="dobry-express-king-street-main-single">
+                                            <div class="dobry-express-king-street-main-content">
+                                                <div class="dobry-express-king-street-main-content-first">
+                                                    <h4>rizla filter tips extra slim 5,7 mm</h4>
+                                                    <p>£1.99</p>
+                                                </div>
+                                                <div class="dobry-express-king-street-main-content-second">
+                                                    <img src="assets/images/image108.jpeg" alt="">
+                                                </div>
+                                                <div class="dobry-express-king-street-main-content-thurd">
+                                                    <button><span>+</span></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 mt-4">
+                                    <div class="dobry-express-king-street-main-parent">
+                                        <div class="dobry-express-king-street-main-single">
+                                            <div class="dobry-express-king-street-main-content">
+                                                <div class="dobry-express-king-street-main-content-first">
+                                                    <h4>rizla filter tips extra slim 5,7 mm</h4>
+                                                    <p>£1.99</p>
+                                                </div>
+                                                <div class="dobry-express-king-street-main-content-second">
+                                                    <img src="assets/images/image103.jpeg" alt="">
+                                                </div>
+                                                <div class="dobry-express-king-street-main-content-thurd">
+                                                    <button><span>+</span></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h4 id="scrollspyHeading2">Second heading</h4>
+                            <div class="row">
+                                <div class="col-xl-6 mt-4">
+                                    <div class="dobry-express-king-street-main-parent">
+                                        <div class="dobry-express-king-street-main-single">
+                                            <div class="dobry-express-king-street-main-content">
+                                                <div class="dobry-express-king-street-main-content-first">
+                                                    <h4>Lighter</h4>
+                                                    <p>£1.99</p>
+                                                </div>
+                                                <div class="dobry-express-king-street-main-content-second">
+                                                    <img src="assets/images/image104.jpeg" alt="">
+                                                </div>
+                                                <div class="dobry-express-king-street-main-content-thurd">
+                                                    <button><span>+</span></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 mt-4">
+                                    <div class="dobry-express-king-street-main-parent">
+                                        <div class="dobry-express-king-street-main-single">
+                                            <div class="dobry-express-king-street-main-content">
+                                                <div class="dobry-express-king-street-main-content-first">
+                                                    <h4>SWAN Menthol Extra Slim Filter</h4>
+                                                    <p>£0.99</p>
+                                                </div>
+                                                <div class="dobry-express-king-street-main-content-second">
+                                                    <img src="assets/images/image105.jpeg" alt="">
+                                                </div>
+                                                <div class="dobry-express-king-street-main-content-thurd">
+                                                    <button><span>+</span></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 mt-4">
+                                    <div class="dobry-express-king-street-main-parent">
+                                        <div class="dobry-express-king-street-main-single">
+                                            <div class="dobry-express-king-street-main-content">
+                                                <div class="dobry-express-king-street-main-content-first">
+                                                    <h4>RIZLA King Size Green</h4>
+                                                    <p>£1.99</p>
+                                                </div>
+                                                <div class="dobry-express-king-street-main-content-second">
+                                                    <img src="assets/images/image106.jpeg" alt="">
+                                                </div>
+                                                <div class="dobry-express-king-street-main-content-thurd">
+                                                    <button><span>+</span></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 mt-4">
+                                    <div class="dobry-express-king-street-main-parent">
+                                        <div class="dobry-express-king-street-main-single">
+                                            <div class="dobry-express-king-street-main-content">
+                                                <div class="dobry-express-king-street-main-content-first">
+                                                    <h4>RIZLA King Size Green</h4>
+                                                    <p>£1.99</p>
+                                                </div>
+                                                <div class="dobry-express-king-street-main-content-second">
+                                                    <img src="assets/images/image107.jpeg" alt="">
+                                                </div>
+                                                <div class="dobry-express-king-street-main-content-thurd">
+                                                    <button><span>+</span></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 mt-4">
+                                    <div class="dobry-express-king-street-main-parent">
+                                        <div class="dobry-express-king-street-main-single">
+                                            <div class="dobry-express-king-street-main-content">
+                                                <div class="dobry-express-king-street-main-content-first">
+                                                    <h4>rizla filter tips extra slim 5,7 mm</h4>
+                                                    <p>£1.99</p>
+                                                </div>
+                                                <div class="dobry-express-king-street-main-content-second">
+                                                    <img src="assets/images/image108.jpeg" alt="">
+                                                </div>
+                                                <div class="dobry-express-king-street-main-content-thurd">
+                                                    <button><span>+</span></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 mt-4">
+                                    <div class="dobry-express-king-street-main-parent">
+                                        <div class="dobry-express-king-street-main-single">
+                                            <div class="dobry-express-king-street-main-content">
+                                                <div class="dobry-express-king-street-main-content-first">
+                                                    <h4>rizla filter tips extra slim 5,7 mm</h4>
+                                                    <p>£1.99</p>
+                                                </div>
+                                                <div class="dobry-express-king-street-main-content-second">
+                                                    <img src="assets/images/image103.jpeg" alt="">
+                                                </div>
+                                                <div class="dobry-express-king-street-main-content-thurd">
+                                                    <button><span>+</span></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h4 id="scrollspyHeading3">Third heading</h4>
+                            <div class="row">
+                                <div class="col-xl-6 mt-4">
+                                    <div class="dobry-express-king-street-main-parent">
+                                        <div class="dobry-express-king-street-main-single">
+                                            <div class="dobry-express-king-street-main-content">
+                                                <div class="dobry-express-king-street-main-content-first">
+                                                    <h4>Lighter</h4>
+                                                    <p>£1.99</p>
+                                                </div>
+                                                <div class="dobry-express-king-street-main-content-second">
+                                                    <img src="assets/images/image104.jpeg" alt="">
+                                                </div>
+                                                <div class="dobry-express-king-street-main-content-thurd">
+                                                    <button><span>+</span></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 mt-4">
+                                    <div class="dobry-express-king-street-main-parent">
+                                        <div class="dobry-express-king-street-main-single">
+                                            <div class="dobry-express-king-street-main-content">
+                                                <div class="dobry-express-king-street-main-content-first">
+                                                    <h4>SWAN Menthol Extra Slim Filter</h4>
+                                                    <p>£0.99</p>
+                                                </div>
+                                                <div class="dobry-express-king-street-main-content-second">
+                                                    <img src="assets/images/image105.jpeg" alt="">
+                                                </div>
+                                                <div class="dobry-express-king-street-main-content-thurd">
+                                                    <button><span>+</span></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 mt-4">
+                                    <div class="dobry-express-king-street-main-parent">
+                                        <div class="dobry-express-king-street-main-single">
+                                            <div class="dobry-express-king-street-main-content">
+                                                <div class="dobry-express-king-street-main-content-first">
+                                                    <h4>RIZLA King Size Green</h4>
+                                                    <p>£1.99</p>
+                                                </div>
+                                                <div class="dobry-express-king-street-main-content-second">
+                                                    <img src="assets/images/image106.jpeg" alt="">
+                                                </div>
+                                                <div class="dobry-express-king-street-main-content-thurd">
+                                                    <button><span>+</span></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 mt-4">
+                                    <div class="dobry-express-king-street-main-parent">
+                                        <div class="dobry-express-king-street-main-single">
+                                            <div class="dobry-express-king-street-main-content">
+                                                <div class="dobry-express-king-street-main-content-first">
+                                                    <h4>RIZLA King Size Green</h4>
+                                                    <p>£1.99</p>
+                                                </div>
+                                                <div class="dobry-express-king-street-main-content-second">
+                                                    <img src="assets/images/image107.jpeg" alt="">
+                                                </div>
+                                                <div class="dobry-express-king-street-main-content-thurd">
+                                                    <button><span>+</span></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 mt-4">
+                                    <div class="dobry-express-king-street-main-parent">
+                                        <div class="dobry-express-king-street-main-single">
+                                            <div class="dobry-express-king-street-main-content">
+                                                <div class="dobry-express-king-street-main-content-first">
+                                                    <h4>rizla filter tips extra slim 5,7 mm</h4>
+                                                    <p>£1.99</p>
+                                                </div>
+                                                <div class="dobry-express-king-street-main-content-second">
+                                                    <img src="assets/images/image108.jpeg" alt="">
+                                                </div>
+                                                <div class="dobry-express-king-street-main-content-thurd">
+                                                    <button><span>+</span></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 mt-4">
+                                    <div class="dobry-express-king-street-main-parent">
+                                        <div class="dobry-express-king-street-main-single">
+                                            <div class="dobry-express-king-street-main-content">
+                                                <div class="dobry-express-king-street-main-content-first">
+                                                    <h4>rizla filter tips extra slim 5,7 mm</h4>
+                                                    <p>£1.99</p>
+                                                </div>
+                                                <div class="dobry-express-king-street-main-content-second">
+                                                    <img src="assets/images/image103.jpeg" alt="">
+                                                </div>
+                                                <div class="dobry-express-king-street-main-content-thurd">
+                                                    <button><span>+</span></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h4 id="scrollspyHeading4">Fourth heading</h4>
+                            <div class="row">
+                                <div class="col-xl-6 mt-4">
+                                    <div class="dobry-express-king-street-main-parent">
+                                        <div class="dobry-express-king-street-main-single">
+                                            <div class="dobry-express-king-street-main-content">
+                                                <div class="dobry-express-king-street-main-content-first">
+                                                    <h4>Lighter</h4>
+                                                    <p>£1.99</p>
+                                                </div>
+                                                <div class="dobry-express-king-street-main-content-second">
+                                                    <img src="assets/images/image104.jpeg" alt="">
+                                                </div>
+                                                <div class="dobry-express-king-street-main-content-thurd">
+                                                    <button><span>+</span></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 mt-4">
+                                    <div class="dobry-express-king-street-main-parent">
+                                        <div class="dobry-express-king-street-main-single">
+                                            <div class="dobry-express-king-street-main-content">
+                                                <div class="dobry-express-king-street-main-content-first">
+                                                    <h4>SWAN Menthol Extra Slim Filter</h4>
+                                                    <p>£0.99</p>
+                                                </div>
+                                                <div class="dobry-express-king-street-main-content-second">
+                                                    <img src="assets/images/image105.jpeg" alt="">
+                                                </div>
+                                                <div class="dobry-express-king-street-main-content-thurd">
+                                                    <button><span>+</span></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 mt-4">
+                                    <div class="dobry-express-king-street-main-parent">
+                                        <div class="dobry-express-king-street-main-single">
+                                            <div class="dobry-express-king-street-main-content">
+                                                <div class="dobry-express-king-street-main-content-first">
+                                                    <h4>RIZLA King Size Green</h4>
+                                                    <p>£1.99</p>
+                                                </div>
+                                                <div class="dobry-express-king-street-main-content-second">
+                                                    <img src="assets/images/image106.jpeg" alt="">
+                                                </div>
+                                                <div class="dobry-express-king-street-main-content-thurd">
+                                                    <button><span>+</span></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 mt-4">
+                                    <div class="dobry-express-king-street-main-parent">
+                                        <div class="dobry-express-king-street-main-single">
+                                            <div class="dobry-express-king-street-main-content">
+                                                <div class="dobry-express-king-street-main-content-first">
+                                                    <h4>RIZLA King Size Green</h4>
+                                                    <p>£1.99</p>
+                                                </div>
+                                                <div class="dobry-express-king-street-main-content-second">
+                                                    <img src="assets/images/image107.jpeg" alt="">
+                                                </div>
+                                                <div class="dobry-express-king-street-main-content-thurd">
+                                                    <button><span>+</span></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 mt-4">
+                                    <div class="dobry-express-king-street-main-parent">
+                                        <div class="dobry-express-king-street-main-single">
+                                            <div class="dobry-express-king-street-main-content">
+                                                <div class="dobry-express-king-street-main-content-first">
+                                                    <h4>rizla filter tips extra slim 5,7 mm</h4>
+                                                    <p>£1.99</p>
+                                                </div>
+                                                <div class="dobry-express-king-street-main-content-second">
+                                                    <img src="assets/images/image108.jpeg" alt="">
+                                                </div>
+                                                <div class="dobry-express-king-street-main-content-thurd">
+                                                    <button><span>+</span></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 mt-4">
+                                    <div class="dobry-express-king-street-main-parent">
+                                        <div class="dobry-express-king-street-main-single">
+                                            <div class="dobry-express-king-street-main-content">
+                                                <div class="dobry-express-king-street-main-content-first">
+                                                    <h4>rizla filter tips extra slim 5,7 mm</h4>
+                                                    <p>£1.99</p>
+                                                </div>
+                                                <div class="dobry-express-king-street-main-content-second">
+                                                    <img src="assets/images/image103.jpeg" alt="">
+                                                </div>
+                                                <div class="dobry-express-king-street-main-content-thurd">
+                                                    <button><span>+</span></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h4 id="scrollspyHeading5">Fifth heading</h4>
+                            <div class="row">
+                                <div class="col-xl-6 mt-4">
+                                    <div class="dobry-express-king-street-main-parent">
+                                        <div class="dobry-express-king-street-main-single">
+                                            <div class="dobry-express-king-street-main-content">
+                                                <div class="dobry-express-king-street-main-content-first">
+                                                    <h4>Lighter</h4>
+                                                    <p>£1.99</p>
+                                                </div>
+                                                <div class="dobry-express-king-street-main-content-thurd">
+                                                    <button><span>+</span></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 mt-4">
+                                    <div class="dobry-express-king-street-main-parent">
+                                        <div class="dobry-express-king-street-main-single">
+                                            <div class="dobry-express-king-street-main-content">
+                                                <div class="dobry-express-king-street-main-content-first">
+                                                    <h4>SWAN Menthol Extra Slim Filter</h4>
+                                                    <p>£0.99</p>
+                                                </div>
+                                                <div class="dobry-express-king-street-main-content-thurd">
+                                                    <button><span>+</span></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 mt-4">
+                                    <div class="dobry-express-king-street-main-parent">
+                                        <div class="dobry-express-king-street-main-single">
+                                            <div class="dobry-express-king-street-main-content">
+                                                <div class="dobry-express-king-street-main-content-first">
+                                                    <h4>RIZLA King Size Green</h4>
+                                                    <p>£1.99</p>
+                                                </div>
+                                                <div class="dobry-express-king-street-main-content-thurd">
+                                                    <button><span>+</span></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 mt-4">
+                                    <div class="dobry-express-king-street-main-parent">
+                                        <div class="dobry-express-king-street-main-single">
+                                            <div class="dobry-express-king-street-main-content">
+                                                <div class="dobry-express-king-street-main-content-first">
+                                                    <h4>RIZLA King Size Green</h4>
+                                                    <p>£1.99</p>
+                                                </div>
+                                                <div class="dobry-express-king-street-main-content-thurd">
+                                                    <button><span>+</span></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 mt-4">
+                                    <div class="dobry-express-king-street-main-parent">
+                                        <div class="dobry-express-king-street-main-single">
+                                            <div class="dobry-express-king-street-main-content">
+                                                <div class="dobry-express-king-street-main-content-first">
+                                                    <h4>rizla filter tips extra slim 5,7 mm</h4>
+                                                    <p>£1.99</p>
+                                                </div>
+                                                <div class="dobry-express-king-street-main-content-thurd">
+                                                    <button><span>+</span></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 mt-4">
+                                    <div class="dobry-express-king-street-main-parent">
+                                        <div class="dobry-express-king-street-main-single">
+                                            <div class="dobry-express-king-street-main-content">
+                                                <div class="dobry-express-king-street-main-content-first">
+                                                    <h4>rizla filter tips extra slim 5,7 mm</h4>
+                                                    <p>£1.99</p>
+                                                </div>
+                                                <div class="dobry-express-king-street-main-content-thurd">
+                                                    <button><span>+</span></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 mt-4">
+                                    <div class="dobry-express-king-street-main-parent">
+                                        <div class="dobry-express-king-street-main-single">
+                                            <div class="dobry-express-king-street-main-content">
+                                                <div class="dobry-express-king-street-main-content-first">
+                                                    <h4>rizla filter tips extra slim 5,7 mm</h4>
+                                                    <p>£1.99</p>
+                                                </div>
+                                                <div class="dobry-express-king-street-main-content-thurd">
+                                                    <button><span>+</span></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 mt-4">
+                                    <div class="dobry-express-king-street-main-parent">
+                                        <div class="dobry-express-king-street-main-single">
+                                            <div class="dobry-express-king-street-main-content">
+                                                <div class="dobry-express-king-street-main-content-first">
+                                                    <h4>rizla filter tips extra slim 5,7 mm</h4>
+                                                    <p>£1.99</p>
+                                                </div>
+                                                <div class="dobry-express-king-street-main-content-thurd">
+                                                    <button><span>+</span></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 mt-4">
+                                    <div class="dobry-express-king-street-main-parent">
+                                        <div class="dobry-express-king-street-main-single">
+                                            <div class="dobry-express-king-street-main-content">
+                                                <div class="dobry-express-king-street-main-content-first">
+                                                    <h4>rizla filter tips extra slim 5,7 mm</h4>
+                                                    <p>£1.99</p>
+                                                </div>
+                                                <div class="dobry-express-king-street-main-content-thurd">
+                                                    <button><span>+</span></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 mt-4">
+                                    <div class="dobry-express-king-street-main-parent">
+                                        <div class="dobry-express-king-street-main-single">
+                                            <div class="dobry-express-king-street-main-content">
+                                                <div class="dobry-express-king-street-main-content-first">
+                                                    <h4>rizla filter tips extra slim 5,7 mm</h4>
+                                                    <p>£1.99</p>
+                                                </div>
+                                                <div class="dobry-express-king-street-main-content-thurd">
+                                                    <button><span>+</span></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 mt-4">
+                                    <div class="dobry-express-king-street-main-parent">
+                                        <div class="dobry-express-king-street-main-single">
+                                            <div class="dobry-express-king-street-main-content">
+                                                <div class="dobry-express-king-street-main-content-first">
+                                                    <h4>rizla filter tips extra slim 5,7 mm</h4>
+                                                    <p>£1.99</p>
+                                                </div>
+                                                <div class="dobry-express-king-street-main-content-thurd">
+                                                    <button><span>+</span></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 mt-4">
+                                    <div class="dobry-express-king-street-main-parent">
+                                        <div class="dobry-express-king-street-main-single">
+                                            <div class="dobry-express-king-street-main-content">
+                                                <div class="dobry-express-king-street-main-content-first">
+                                                    <h4>rizla filter tips extra slim 5,7 mm</h4>
+                                                    <p>£1.99</p>
+                                                </div>
+                                                <div class="dobry-express-king-street-main-content-thurd">
+                                                    <button><span>+</span></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 mt-4">
+                                    <div class="dobry-express-king-street-main-parent">
+                                        <div class="dobry-express-king-street-main-single">
+                                            <div class="dobry-express-king-street-main-content">
+                                                <div class="dobry-express-king-street-main-content-first">
+                                                    <h4>rizla filter tips extra slim 5,7 mm</h4>
+                                                    <p>£1.99</p>
+                                                </div>
+                                                <div class="dobry-express-king-street-main-content-thurd">
+                                                    <button><span>+</span></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 mt-4">
+                                    <div class="dobry-express-king-street-main-parent">
+                                        <div class="dobry-express-king-street-main-single">
+                                            <div class="dobry-express-king-street-main-content">
+                                                <div class="dobry-express-king-street-main-content-first">
+                                                    <h4>rizla filter tips extra slim 5,7 mm</h4>
+                                                    <p>£1.99</p>
+                                                </div>
+                                                <div class="dobry-express-king-street-main-content-thurd">
+                                                    <button><span>+</span></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="your-basket-is-empty">
+                                <div class="your-basket-is-empty-content">
+                                    <img src="assets/images/Screenshot_1.png" alt="">
+                                    <p>Your basket is empty</p>    
+                                </div>
+                                <div class="your-basket-is-empty-button">
+                                    <button type="button">
+                                        <span>Go to checkout</span>
+                                    </button>    
+                                </div>        
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+
+
+
+    <!-- ============================== Shah Jalal ================================
+     ============================= Footer Section Design ===========================
+     =================================== 20/05/2022 ================================ -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mt-4">
+                    <div class="footer-box">
+                        <h3>Discover Deliveroo</h3>
+                        <ul>
+                            <li><a href="">Investors</a></li>
+                            <li><a href="">About us</a></li>
+                            <li><a href="">Takeaway</a></li>
+                            <li><a href="">More</a></li>
+                            <li><a href="">Newsroom</a></li>
+                            <li><a href="">Foodscene blog</a></li>
+                            <li><a href="">Engineering blog</a></li>
+                            <li><a href="">Design blog</a></li>
+                            <li><a href="">Gift Cards</a></li>
+                            <li><a href="">Careers</a></li>
+                            <li><a href="">Restaurant signup</a></li>
+                            <li><a href="">Become a rider</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mt-4">
+                    <div class="footer-box">
+                        <h3>Legal</h3>
+                        <ul>
+                            <li><a href="">Terms and conditions</a></li>
+                            <li><a href="">Privacy</a></li>
+                            <li><a href="">Cookies</a></li>
+                            <li><a href="">Modern Slavery Statement</a></li>
+                            <li><a href="">Tax Strategy</a></li>
+                            <li><a href="">Section 172 Statement</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mt-4">
+                    <div class="footer-box">
+                        <h3>Help</h3>
+                        <ul>
+                            <li><a href="">Contact</a></li>
+                            <li><a href="">FAQs</a></li>
+                            <li><a href="">Cuisines</a></li>
+                            <li><a href="">Brands</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mt-4">
+                    <div class="footer-box">
+                        <h3>Take Deliveroo with you</h3>
+                        <a class="footer-app-btn" href=""><img src="assets/images/app-store.jpg" alt=""></a>
+                        <a class="footer-app-btn" href=""><img src="assets/images/play-stor.jpg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="copyright">
+                        <ul>
+                            <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                        </ul>
+                        <p>© 2022 Deliveroo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
+</body></html>
